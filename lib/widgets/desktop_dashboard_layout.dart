@@ -1,6 +1,6 @@
 import 'package:dashboard_app/widgets/all_expenses_widget/all_expenses.dart';
 import 'package:dashboard_app/widgets/drawer_widget/custome_drawer.dart';
-import 'package:dashboard_app/widgets/quick_invoice.dart';
+import 'package:dashboard_app/widgets/quick_invoice_widgte/quick_invoice.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
