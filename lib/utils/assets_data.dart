@@ -1,28 +1,33 @@
-abstract class AssetsData {
+class Assets {
+  Assets._();
+  
   /// Assets for imagesAvater1
   /// assets/images/avater1.svg
-  static const String imagesAvater1SVG = "assets/images/avater1.svg";
+  static const String imagesAvater1 = "assets/images/avater1.svg";
 
   /// Assets for imagesAvater2
   /// assets/images/avater2.svg
-  static const String imagesAvater2SVG = "assets/images/avater2.svg";
+  static const String imagesAvater2 = "assets/images/avater2.svg";
+
+  /// Assets for imagesAvater3
+  /// assets/images/avater3.svg
+  static const String imagesAvater3 = "assets/images/avater3.svg";
 
   /// Assets for imagesBalance
   /// assets/images/balance.svg
-  static const String imagesBalanceSVG = "assets/images/balance.svg";
+  static const String imagesBalance = "assets/images/balance.svg";
 
   /// Assets for imagesCardBackground
   /// assets/images/card_background.svg
-  static const String imagesCardBackgroundSVG =
-      "assets/images/card_background.svg";
+  static const String imagesCardBackground = "assets/images/card_background.svg";
 
   /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
-  static const String imagesDashboardSVG = "assets/images/dashboard.svg";
+  static const String imagesDashboard = "assets/images/dashboard.svg";
 
   /// Assets for imagesExpenses
   /// assets/images/expenses.svg
-  static const String imagesExpensesSVG = "assets/images/expenses.svg";
+  static const String imagesExpenses = "assets/images/expenses.svg";
 
   /// Assets for imagesIncome
   /// assets/images/income.svg
@@ -52,3 +57,4 @@ abstract class AssetsData {
   /// assets/images/wallet.svg
   static const String imagesWallet = "assets/images/wallet.svg";
 }
+
