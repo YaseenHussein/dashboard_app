@@ -1,5 +1,7 @@
 import 'package:dashboard_app/widgets/adaptive_layout.dart';
 import 'package:dashboard_app/widgets/desktop_dashboard_layout.dart';
+import 'package:dashboard_app/widgets/mobil_dashboard_layout.dart';
+import 'package:dashboard_app/widgets/taplet_dashboard_layout.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {
@@ -10,9 +12,9 @@ class DashboardView extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffF7F9FA),
       body: AdaptiveLayout(
-        mobileLayout: (context) => const SizedBox(),
+        mobileLayout: (context) => const MobilDashboardLayout(),
         deskTopLayout: (context) => const DesktopDashboardLayout(),
-        tabletLayout: (context) => const SizedBox(),
+        tabletLayout: (context) => const TabletDashboardLayout(),
       ),
     );
   }
