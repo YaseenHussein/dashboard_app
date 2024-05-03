@@ -1,4 +1,3 @@
-
 import 'package:dashboard_app/model/transaction_history_model.dart';
 import 'package:dashboard_app/widgets/transaction_history_widgte/transaction_history_item.dart';
 import 'package:flutter/material.dart';
@@ -27,12 +26,9 @@ class TransactionHistoryListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: items.length,
-      itemBuilder: (BuildContext context, int index) {
-        return TransactionHistoryItem(item: items[index]);
-      },
+    return Column(
+      children: List.generate(
+          items.length, (index) => TransactionHistoryItem(item: items[index])),
     );
   }
 }

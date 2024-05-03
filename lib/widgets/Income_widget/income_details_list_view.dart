@@ -13,16 +13,16 @@ class IncomeDetailsListView extends StatelessWidget {
         color: Color(0xff064061), title: "Product royalti", value: "20%"),
     IncomeModel(color: Color(0xffE2DECD), title: "Other", value: "22%"),
   ];
+
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: items.length,
-      shrinkWrap: true,
-      itemBuilder: (BuildContext context, int index) {
-        return IncomeDetailsItem(
+    return Column(
+      children: List.generate(
+        items.length,
+        (index) => IncomeDetailsItem(
           incomeModel: items[index],
-        );
-      },
+        ),
+      ),
     );
   }
 }
