@@ -1,6 +1,3 @@
-
-
-
 import 'package:dashboard_app/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -9,14 +6,14 @@ class QuickInvoiceHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
         Text(
           "Quick Invoice",
-          style: TextStyles.textStyleSemiBold20,
+          style: TextStyles.textStyleSemiBold20(context: context),
         ),
-        Spacer(),
-        CircleAvatar(
+        const Spacer(),
+        const CircleAvatar(
           backgroundColor: Color(0xffFAFAFA),
           child: Icon(
             Icons.add,

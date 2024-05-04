@@ -18,16 +18,16 @@ class TransactionHistoryItem extends StatelessWidget {
             const EdgeInsetsDirectional.symmetric(horizontal: 16, vertical: 10),
         subtitle: Text(
           item.date,
-          style: TextStyles.textStyleRegular16
+          style: TextStyles.textStyleRegular16(context: context)
               .copyWith(color: const Color(0xffAAAAAA)),
         ),
         title: Text(
           item.title,
-          style: TextStyles.textStyleSemiBold16,
+          style: TextStyles.textStyleSemiBold16(context: context),
         ),
         trailing: Text(
           item.amount,
-          style: TextStyles.textStyleSemiBold20.copyWith(
+          style: TextStyles.textStyleSemiBold20(context: context).copyWith(
             color: item.isWithDrawal
                 ? const Color(0xffF3735E)
                 : const Color(0xff7DD97B),

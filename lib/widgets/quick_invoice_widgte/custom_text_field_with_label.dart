@@ -13,7 +13,7 @@ class CustomTextFieldWithLabel extends StatelessWidget {
       children: [
         Text(
           title,
-          style: TextStyles.textStyleMedium16,
+          style: TextStyles.textStyleMedium16(context: context),
         ),
         const SizedBox(
           height: 12,

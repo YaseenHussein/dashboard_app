@@ -22,11 +22,11 @@ class UserListTileInfo extends StatelessWidget {
           ),
           title: Text(
             items.title,
-            style: TextStyles.textStyleSemiBold16,
+            style: TextStyles.textStyleSemiBold16(context: context),
           ),
           subtitle: Text(
             items.subtitle,
-            style: TextStyles.textStyleRegular12,
+            style: TextStyles.textStyleRegular12(context: context),
           ),
         ),
       ),
