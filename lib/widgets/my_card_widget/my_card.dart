@@ -1,7 +1,8 @@
-
 import 'package:dashboard_app/utils/app_styles.dart';
 import 'package:dashboard_app/utils/assets_data.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class MyCard extends StatelessWidget {
@@ -26,19 +27,21 @@ class MyCard extends StatelessWidget {
                   const EdgeInsetsDirectional.only(start: 31, top: 16, end: 45),
               title: Text(
                 "Name card",
-                style:
-                    TextStyles.textStyleRegular16(context: context).copyWith(color: Colors.white),
+                style: TextStyles.textStyleRegular16(context: context)
+                    .copyWith(color: Colors.white),
               ),
               subtitle: Text(
                 "Syah Bandi",
-                style:
-                    TextStyles.textStyleMedium20(context: context).copyWith(color: Colors.white),
+                style: TextStyles.textStyleMedium20(context: context)
+                    .copyWith(color: Colors.white),
               ),
               trailing: SvgPicture.asset(Assets.imagesGallery),
             ),
             const Spacer(),
             Padding(
-              padding: const EdgeInsetsDirectional.only(end: 20, bottom: 27),
+              padding: const EdgeInsetsDirectional.only(
+                end: 20,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -47,9 +50,7 @@ class MyCard extends StatelessWidget {
                     style: TextStyles.textStyleSemiBold24(context: context)
                         .copyWith(color: Colors.white),
                   ),
-                  const SizedBox(
-                    height: 14,
-                  ),
+                  // Spacer(),
                   Text(
                     "12/20 - 124",
                     style: TextStyles.textStyleMedium16(context: context)
@@ -58,6 +59,11 @@ class MyCard extends StatelessWidget {
                 ],
               ),
             ),
+            const Flexible(
+              child: SizedBox(
+                height: 27,
+              ),
+            )
           ],
         ),
       ),

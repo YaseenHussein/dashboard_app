@@ -31,9 +31,13 @@ class InActiveDrawerItem extends StatelessWidget {
         drawerItemModel.image,
         fit: BoxFit.scaleDown,
       ),
-      title: Text(
-        drawerItemModel.title,
-        style: TextStyles.textStyleRegular16(context: context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          drawerItemModel.title,
+          style: TextStyles.textStyleRegular16(context: context),
+        ),
       ),
     );
   }
@@ -56,7 +60,7 @@ class ActiveDrawerItem extends StatelessWidget {
       ),
       title: Text(
         drawerItemModel.title,
-        style: TextStyles.textStyleBold16(context: context),
+        style: TextStyles.textStyleSemiBold16(context: context),
       ),
       trailing: Container(
         width: 3.27,

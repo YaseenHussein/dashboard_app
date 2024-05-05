@@ -1,8 +1,9 @@
-
 import 'package:dashboard_app/model/all_expenses_item_model.dart';
 import 'package:dashboard_app/utils/app_styles.dart';
 import 'package:dashboard_app/widgets/all_expenses_widget/all_expenses_item_header.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class ActiveAllExpensesItem extends StatelessWidget {
   const ActiveAllExpensesItem({
@@ -30,24 +31,38 @@ class ActiveAllExpensesItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            allExpensesItemModel.title,
-            style: TextStyles.textStyleSemiBold16(context: context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              allExpensesItemModel.title,
+              style: TextStyles.textStyleSemiBold16(context: context)
+                  .copyWith(color: Colors.white),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            allExpensesItemModel.date,
-            style: TextStyles.textStyleRegular14(context: context)
-                .copyWith(color: const Color(0xffFAFAFA)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              allExpensesItemModel.date,
+              style: TextStyles.textStyleRegular14(context: context)
+                  .copyWith(color: const Color(0xffFAFAFA)),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            allExpensesItemModel.price,
-            style: TextStyles.textStyleSemiBold24(context: context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              allExpensesItemModel.price,
+              style: TextStyles.textStyleSemiBold24(context: context)
+                  .copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),
